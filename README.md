@@ -5,10 +5,6 @@ shortcuts.
 
 [![NPM Badge](https://nodei.co/npm/v8-profiler-trigger.png?downloads=true)](https://www.npmjs.com/package/v8-profiler-trigger)
 
-You can use Chrome debugger to interactively inspect results:
-
-![Flamegraph](docs/flame.gif)
-
 **Taking a heap snapshot**
 
 ![Demo](docs/demo.gif)
@@ -53,6 +49,16 @@ Starts the V8 profiler trigger listeners.
   samplingInterval: 1000
 }
 ```
+
+## Usage
+
+Examples how to use the v8-profiler.
+
+### CPU Profiling
+
+You can use Chrome debugger to interactively inspect results:
+
+![Flamegraph](docs/flame.gif)
 
 
 ## License
