@@ -5,6 +5,10 @@ shortcuts.
 
 [![NPM Badge](https://nodei.co/npm/v8-profiler-trigger.png?downloads=true)](https://www.npmjs.com/package/v8-profiler-trigger)
 
+**Use Chrome debugger to interactively inspect results**
+
+![Flamegraph](docs/flame.gif)
+
 **Taking a heap snapshot**
 
 1. Start v8-profiler-trigger once in your app
