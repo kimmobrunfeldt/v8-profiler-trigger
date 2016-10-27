@@ -1,11 +1,9 @@
 # v8-profiler-trigger
 
-> Shortcuts to take CPU profiles or heap snapshots
+> Trigger CPU profile recording or heap snapshots for node apps using keyboard
+shortcuts.
 
 [![NPM Badge](https://nodei.co/npm/v8-profiler-trigger.png?downloads=true)](https://www.npmjs.com/package/v8-profiler-trigger)
-
-Trigger CPU profile recording or heap snapshots for node apps using keyboard
-shortcuts.
 
 **Taking a heap snapshot**
 
@@ -31,15 +29,12 @@ npm install v8-profiler-trigger --save-dev
 
 ## API
 
-### profilerTrigger([opts])
+### v8ProfilerTrigger([opts])
 
-Starts the V8 profiler keyboard listeners.
+Starts the V8 profiler trigger listeners.
 
 
 #### `opts`
-
-Most options are functions to allow maximal customization. The values
-listed below are the defaults.
 
 ```js
 {
