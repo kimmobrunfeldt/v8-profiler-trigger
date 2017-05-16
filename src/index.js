@@ -54,10 +54,10 @@ function toggleCpuProfiler() {
     profiler.startProfiling(cpuProfilerStartTimestamp, true);
     cpuProfilerRunning = true;
   } else {
+    logGray('Saving CPU profile ..');
     const profile = BPromise.promisifyAll(profiler.stopProfiling());
     profile.exportAsync()
       .then(function(result) {
-        logGray('Saving CPU profile ..');
         const fileName = cpuProfilerStartTimestamp + '.cpuprofile';
 
         return BPromise.props({
@@ -75,10 +75,11 @@ function toggleCpuProfiler() {
 }
 
 function saveHeapSnapshot() {
+  logGray('Saving heap snapshot ..');
+
   const snapshot = BPromise.promisifyAll(profiler.takeSnapshot());
   snapshot.exportAsync()
     .then(function(result) {
-      logGray('Saving heap snapshot ..');
       const fileName = timestamp() + '.heapsnapshot';
 
       return BPromise.props({
