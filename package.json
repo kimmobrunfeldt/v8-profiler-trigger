@@ -1,6 +1,6 @@
 {
   "name": "v8-profiler-trigger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trigger CPU profile recording or heap snapshots for node apps using keyboard shortcuts",
   "main": "src/index.js",
   "repository": {
